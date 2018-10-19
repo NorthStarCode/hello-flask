@@ -81,7 +81,7 @@ def todos():
         task = request.form['task']
         tasks.append(task)
 
-    return render_template('todos.html', tasks=tasks)
+    return render_template('todos.html', title="TODOs", tasks=tasks)
 
 
 app.run()
